@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Trader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- واجهة اللاعب (HUD) -->
+    <div id="hud">
+        <div class="panel">
+            <div class="stat"><span>الوقود:</span> <span id="fuel-val" class="text-orange">100%</span></div>
+            <div class="stat"><span>الرصيد:</span> <span id="credits-val" class="text-green">0 CR</span></div>
+            <div class="stat"><span>الشحنة:</span> <span id="cargo-val" class="text-blue">0/20</span></div>
+        </div>
+        <div id="crosshair">+</div>
+    </div>
+
+    <!-- شاشة المحطة الفضائية (التجارة) -->
+    <div id="station-ui" class="hidden">
+        <h1>محطة التجارة المركزية</h1>
+        <p>مرحباً بك، أيها القبطان. كيف حالك اليوم؟</p>
+        <div class="trade-actions">
+            <button onclick="sellOre()">بيع الخام (50 CR للوحدة)</button>
+            <button onclick="buyFuel()">شراء وقود (20 CR للوحدة)</button>
+            <button onclick="closeStation()">مغادرة المحطة</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
