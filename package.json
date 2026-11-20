@@ -1,0 +1,20 @@
+{
+  "name": "space-trader-exe-3d",
+  "version": "1.0.0",
+  "description": "Premium Space Trading Simulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.engtrx.spacetrader",
+    "win": {
+      "target": "portable"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
